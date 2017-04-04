@@ -1,0 +1,27 @@
+FormProject\ScoreBundle\Entity\Score:
+    type: entity
+    table: null
+    repositoryClass: FormProject\ScoreBundle\Repository\ScoreRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nbQuestion:
+            type: integer
+            nullable: true
+            column: nb_question
+        nbReponse:
+            type: integer
+            nullable: true
+            column: nb_reponse
+        score:
+            type: integer
+            nullable: true
+        idUser:
+            type: integer
+            unique: true
+            column: id_user
+    lifecycleCallbacks: {  }

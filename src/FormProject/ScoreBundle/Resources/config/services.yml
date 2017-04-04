@@ -1,0 +1,4 @@
+services:
+  score_dbo:
+    class: FormProject\ScoreBundle\Controller\DefaultController
+

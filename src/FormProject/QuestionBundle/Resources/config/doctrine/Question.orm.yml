@@ -1,0 +1,27 @@
+FormProject\QuestionBundle\Entity\Question:
+    type: entity
+    table: null
+    repositoryClass: FormProject\QuestionBundle\Repository\QuestionRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        intitule:
+            type: string
+            length: 255
+        bonneReponse:
+            type: string
+            length: 255
+        proposition1:
+            type: string
+            length: 255
+        proposition2:
+            type: string
+            length: 255
+        proposition3:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

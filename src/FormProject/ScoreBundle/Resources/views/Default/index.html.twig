@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title></title>
+	<link rel="stylesheet" type="text/css" media="screen" href="" />
+</head>
+<body>
+    <div id="container">
+    <h1> Liste de score </h1>
+    {% if list_score is not defined or list_score is empty %}
+        <p> il n'y a pas encore de score </p>
+    {% else %}
+        <table class="table">
+            <thead>
+                <tr>
+                <th>USER ID</th>
+                <th>nombre question</th>
+                <th>nombre reponse</th>
+                <th>score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for score in list_score %}
+                <tr>
+                <td>{{score.idUser}}</td>
+                <td>{{score.nbQuestion}}</td>
+                <td>{{score.nbReponse}}</td>
+                <td>{{score.score}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+    </div>
+</body>
+</html>
+

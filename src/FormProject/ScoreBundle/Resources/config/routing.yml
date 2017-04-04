@@ -1,0 +1,7 @@
+form_project_score_homepage:
+    path:     /
+    defaults: { _controller: ScoreBundle:Default:index }
+
+form_project_score_show:
+    path:     /show
+    defaults: { _controller: ScoreBundle:Default:show }

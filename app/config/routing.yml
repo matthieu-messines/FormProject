@@ -1,0 +1,21 @@
+question:
+    resource: "@QuestionBundle/Resources/config/routing.yml"
+    prefix:   /question
+
+score:
+    resource: "@ScoreBundle/Resources/config/routing.yml"
+    prefix:   /score
+
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+
+form_projectmail:
+    resource: "@FormProjectmailBundle/Resources/config/routing.yml"
+    prefix:   /mail
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

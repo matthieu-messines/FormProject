@@ -1,0 +1,15 @@
+Question_homepage:
+    path:     /
+    defaults: { _controller: QuestionBundle:Default:index }
+
+Question_create:
+    path:     /create
+    defaults: { _controller: QuestionBundle:Action:create }
+
+Question_afficher:
+    path:     /afficher
+    defaults: { _controller: QuestionBundle:Action:afficher }
+
+Question_affichageQuestionnaire:
+    path:     /questionnaire
+    defaults: { _controller: QuestionBundle:Questionnaire:index }

@@ -1,0 +1,3 @@
+form_projectmail_homepage:
+    path:     /mail
+    defaults: { _controller: FormProjectmailBundle:Default:index }

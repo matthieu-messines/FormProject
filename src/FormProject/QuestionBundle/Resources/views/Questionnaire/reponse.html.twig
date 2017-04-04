@@ -1,0 +1,27 @@
+{% extends '::master.html.twig' %}
+{% block content %}
+
+Vous avez {{result}} bonnes réponses !
+
+
+Votre score total
+<table class="table">
+    <thead>
+        <tr>
+            <th>USER ID</th>
+            <th>nombre question</th>
+            <th>nombre reponse</th>
+            <th>score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{score.idUser}}</td>
+            <td>{{score.nbQuestion}}</td>
+            <td>{{score.nbReponse}}</td>
+            <td>{{score.score}}</td>
+        </tr>
+    </tbody>
+</table>
+
+{% endblock%}

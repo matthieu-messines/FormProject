@@ -1,0 +1,32 @@
+FormProject\QuestionBundle\Entity\Questionnaire:
+    type: entity
+    table: null
+    repositoryClass: FormProject\QuestionBundle\Repository\QuestionnaireRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        question1:
+            type: array
+        question2:
+            type: array
+        question3:
+            type: array
+        question4:
+            type: array
+        question5:
+            type: array
+        question6:
+            type: array
+        question7:
+            type: array
+        question8:
+            type: array
+        question9:
+            type: array
+        question10:
+            type: array
+    lifecycleCallbacks: {  }
